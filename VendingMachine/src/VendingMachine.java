@@ -12,6 +12,7 @@
  * index 2, and "D"
  * for the slot at index 3.
  */
+
 public class VendingMachine {
 
 	// The number of slots in the vending machine
@@ -195,7 +196,8 @@ public class VendingMachine {
 	public boolean makePurchase(String code) {
 		boolean returnCode = false;
 		VendingMachineItem item = getItem(code);
-		if ((item != null) && (this.balance >= item.getPrice())) {
+		//INJECTED FAULT FOR COVERAGE EXPERIMENT REMOVED THE =
+		if ((item != null) && (this.balance > item.getPrice())) {
 			removeItem(code);
 			this.balance -= item.getPrice();
 			returnCode = true;

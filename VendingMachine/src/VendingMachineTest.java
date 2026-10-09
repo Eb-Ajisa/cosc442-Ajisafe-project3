@@ -12,6 +12,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 public class VendingMachineTest {
 
+
     public VendingMachine vendingMachine;
     public VendingMachineItem vendingMachineItem1, vendingMachineItem2, vendingMachineItem3, vendingMachineItem4, vendingMachineItem5, vendingMachineItem6;
 
